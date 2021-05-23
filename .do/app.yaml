@@ -5,5 +5,5 @@ services:
   github:
     branch: main
     deploy_on_push: true
-    repo: digitalocean/sample-nuxtjs
+    repo: victorgalvez56/sample-nuxtjs
   name: victor-galvez
