@@ -2,9 +2,8 @@
   <v-app id="inspire">
     <div class="image">
       <v-container>
-        <v-row no-gutters>
-          <v-col cols="12">
-            <v-col sm="4">
+        <v-row>
+            <v-col cols="4">
               <v-hover>
                 <template v-slot:default="{ hover }">
                   <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
@@ -55,7 +54,7 @@
                 </template>
               </v-hover>
             </v-col>
-            <v-col sm="8">
+            <v-col cols="8">
               <v-hover>
                 <template v-slot:default="{ hover }">
                   <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
@@ -480,7 +479,6 @@
                 </template>
               </v-hover>
             </v-col>
-          </v-col>
         </v-row>
         <v-btn
           v-show="fab"
