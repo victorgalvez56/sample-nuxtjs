@@ -134,7 +134,7 @@
                               naturally curious, and perpetually working on
                               improving my chops one design problem at a time.
                             </div>
-                            <v-divider />
+                            <v-divider class="pa-md-4 mx-lg-auto"></v-divider>
                             <v-expansion-panels>
                               <v-expansion-panel>
                                 <v-expansion-panel-header class="primary--text">
@@ -552,19 +552,22 @@
                                     Frontend
                                   </v-expansion-panel-header>
                                   <v-expansion-panel-content>
-                                    <v-col
-                                      v-for="technology in technologiesFront"
-                                      :key="technology"
-                                      cols="3"
-                                    >
-                                      <v-container>
-                                        <v-img
-                                          :src="technology.svg"
-                                          height="100"
-                                          contain
-                                        />
-                                      </v-container>
-                                    </v-col>
+                                    <v-row>
+                                      <v-col
+                                        v-for="technology in technologiesFront"
+                                        :key="technology"
+                                        cols="12"
+                                        sm="4"
+                                      >
+                                        <v-container>
+                                          <v-img
+                                            :src="technology.svg"
+                                            height="100"
+                                            contain
+                                          />
+                                        </v-container>
+                                      </v-col>
+                                    </v-row>
                                   </v-expansion-panel-content>
                                 </v-expansion-panel>
                                 <v-expansion-panel>
@@ -574,19 +577,22 @@
                                     Backend
                                   </v-expansion-panel-header>
                                   <v-expansion-panel-content>
-                                    <v-col
+                                    <v-row>
+                                      <v-col
                                       v-for="technology in technologiesBackend"
                                       :key="technology"
-                                      cols="3"
-                                    >
-                                      <v-container>
+                                        cols="12"
+                                        sm="4"
+                                      >
+                                            <v-container>
                                         <v-img
                                           :src="technology.svg"
                                           height="100"
                                           contain
                                         />
                                       </v-container>
-                                    </v-col>
+                                      </v-col>
+                                    </v-row>
                                   </v-expansion-panel-content>
                                 </v-expansion-panel>
                                 <v-expansion-panel>
@@ -596,19 +602,22 @@
                                     Others
                                   </v-expansion-panel-header>
                                   <v-expansion-panel-content>
-                                    <v-col
+                                    <v-row>
+                                      <v-col
                                       v-for="technology in technologiesOthers"
                                       :key="technology"
-                                      cols="3"
-                                    >
-                                      <v-container>
+                                        cols="12"
+                                        sm="4"
+                                      >
+                                   <v-container>
                                         <v-img
                                           :src="technology.svg"
                                           height="100"
                                           contain
                                         />
                                       </v-container>
-                                    </v-col>
+                                      </v-col>
+                                    </v-row>
                                   </v-expansion-panel-content>
                                 </v-expansion-panel>
                               </v-expansion-panels>
@@ -636,6 +645,8 @@
         >
           <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
+        <a href="https://api.whatsapp.com/send?phone=51933336359&text=Hola" class="float" target="_blank">
+        </a>
       </v-container>
     </div>
   </v-app>
@@ -820,5 +831,30 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+}
+.float{
+  background: url("~static/whatsapp.png");
+  background-size: contain;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
 }
 </style>
