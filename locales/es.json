@@ -3,14 +3,16 @@
     "developer": "Developer Software Fullstack",
     "age": "Edad",
     "years": "años",
-    "work_experience": "Experiencia Laboral",
     "country": "País",
     "phone": "Teléfono",
     "email": "Correo",
-    "about_me": "Acerca de mí",
     "portfolio": "Portafolio",
     "skills": "Habilidades",
     "options": "Opciones",
     "spanish": "Español",
-    "english": "Inglés"
+    "english": "Inglés",
+    "about_me": "Acerca de mí",
+    "description_about_me": "Hola, soy Victor. Un placer conocerte. Desde que comencé mi viaje como programador hace casi 6 años, he trabajado tanto presencial como a distancia para agencias, y he colaborado con personas talentosas para crear productos digitales para uso comercial y de consumo. Estoy tranquilamente confiado, naturalmente curioso y trabajando constantemente para mejorar mis habilidades, un problema de desarrollo a la vez.",
+    "vocational_training":"Formación Profesional",
+    "work_experience":"Experiencia Laboral"
 }

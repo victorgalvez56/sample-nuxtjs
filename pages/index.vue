@@ -3,17 +3,10 @@
     <div class="image">
       <v-container>
         <v-row>
-          <v-col cols="12" sm="4">
+          <v-col cols="12" sm="4" style="height:100vh">
             <v-hover>
               <template v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
-                  <template slot="progress">
-                    <v-progress-linear
-                      color="deep-purple"
-                      height="10"
-                      indeterminate
-                    />
-                  </template>
 
                   <v-img height="100%" src="profile.jpg" />
 
@@ -121,24 +114,17 @@
                       <v-tab-item>
                         <v-card flat min-height="465px">
                           <v-card-title class="primary--text">
-                            About me
+                            {{ $t("about_me") }}
                           </v-card-title>
                           <v-card-text>
                             <div class="text-justify">
-                              Hi, I’m Victor. Nice to meet you. Since beginning
-                              my journey as a freelance designer nearly 10 years
-                              ago, I've done remote work for agencies, consulted
-                              for startups, and collaborated with talented
-                              people to create digital products for both
-                              business and consumer use. I'm quietly confident,
-                              naturally curious, and perpetually working on
-                              improving my chops one design problem at a time.
+                              {{ $t("description_about_me") }}
                             </div>
                             <v-divider class="pa-md-4 mx-lg-auto"></v-divider>
                             <v-expansion-panels>
-                              <v-expansion-panel>
+                              <v-expansion-panel style="padding: 0 0 0">
                                 <v-expansion-panel-header class="primary--text">
-                                  Formación Profesional
+                                  {{ $t("vocational_training") }}
                                   <template v-slot:actions>
                                     <v-icon color="green">
                                       $expand
@@ -186,9 +172,9 @@
                                   </v-timeline>
                                 </v-expansion-panel-content>
                               </v-expansion-panel>
-                              <v-expansion-panel>
+                              <v-expansion-panel style="padding: 0 0 0">
                                 <v-expansion-panel-header class="primary--text">
-                                  Experiencia Laboral
+                                  {{ $t("work_experience") }}
                                   <template v-slot:actions>
                                     <v-icon color="green">
                                       $expand
@@ -325,7 +311,7 @@
                                   </v-timeline>
                                 </v-expansion-panel-content>
                               </v-expansion-panel>
-                              <v-expansion-panel>
+                              <v-expansion-panel style="padding: 0 0 0">
                                 <v-expansion-panel-header class="primary--text">
                                   Hackathones
                                   <template v-slot:actions>
