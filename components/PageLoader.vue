@@ -17,7 +17,7 @@
     },
     methods: {
   activate() {
-    setTimeout(() => this.isloaded = true, 800);
+    setTimeout(() => this.isloaded = true, 4000);
   }
 }
   }

@@ -657,6 +657,7 @@
           class="float"
           color="#25d366"
           @click="toTop"
+          href="https://api.whatsapp.com/send?phone=51933336359&text=Hola"
         >
           <v-icon>mdi-whatsapp</v-icon>
         </v-btn>
