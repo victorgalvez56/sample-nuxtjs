@@ -1,10 +1,19 @@
 <template>
   <div>
+        <PageLoader />
     <Nuxt />
   </div>
 </template>
-
+<script>
+import PageLoader from '@/components/PageLoader.vue'
+export default {
+  components:{
+    PageLoader
+  }
+}
+</script>
 <style>
+
 html {
   font-family:
     'Source Sans Pro',

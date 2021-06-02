@@ -270,7 +270,7 @@
                                           <strong>Instituto Macro Perú</strong>
                                           <div class="caption">
                                             Elaboración de Sistema Específico de
-                                            certificados.
+                                            certificados usando Codeigniter.
                                           </div>
                                         </v-col>
                                       </v-row>
@@ -285,7 +285,7 @@
                                           <strong>Turbo Gaming Center</strong>
                                           <div class="caption">
                                             Elaboración Sistema Específico de
-                                            Ventas e Inventario empresa.
+                                            Ventas e Inventario empresa usando Codeigniter.
                                           </div>
                                         </v-col>
                                       </v-row>
