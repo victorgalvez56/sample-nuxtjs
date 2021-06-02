@@ -32,7 +32,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #051a34;
+    background-color: black;
     z-index: 999;
   }
   // -----------------------------------------------------
