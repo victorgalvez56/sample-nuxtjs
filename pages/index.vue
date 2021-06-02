@@ -47,7 +47,7 @@
               </template>
             </v-hover>
           </v-col>
-          <v-col cols="12" sm="8">
+          <v-col cols="12" sm="8" style="height:100vh">
             <v-hover>
               <template v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
@@ -174,7 +174,7 @@
                               </v-expansion-panel>
                               <v-expansion-panel style="padding: 0 0 0">
                                 <v-expansion-panel-header class="primary--text">
-                                  {{ $t("work_experience") }}
+                                  {{ $t("vocational_training") }}
                                   <template v-slot:actions>
                                     <v-icon color="green">
                                       $expand
