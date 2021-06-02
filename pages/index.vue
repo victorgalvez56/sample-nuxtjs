@@ -122,7 +122,7 @@
                             </div>
                             <v-divider class="pa-md-4 mx-lg-auto"></v-divider>
                             <v-expansion-panels>
-                              <v-expansion-panel style="padding: 0 0 0">
+                              <v-expansion-panel >
                                 <v-expansion-panel-header class="primary--text">
                                   {{ $t("vocational_training") }}
                                   <template v-slot:actions>
@@ -131,7 +131,7 @@
                                     </v-icon>
                                   </template>
                                 </v-expansion-panel-header>
-                                <v-expansion-panel-content>
+                                <v-expansion-panel-content class="padding-g">
                                   <v-timeline align-top dense>
                                     <v-timeline-item
                                       color="pink"
@@ -172,16 +172,16 @@
                                   </v-timeline>
                                 </v-expansion-panel-content>
                               </v-expansion-panel>
-                              <v-expansion-panel style="padding: 0 0 0">
+                              <v-expansion-panel >
                                 <v-expansion-panel-header class="primary--text">
-                                  {{ $t("vocational_training") }}
+                                  {{ $t("work_experience") }}
                                   <template v-slot:actions>
                                     <v-icon color="green">
                                       $expand
                                     </v-icon>
                                   </template>
                                 </v-expansion-panel-header>
-                                <v-expansion-panel-content>
+                                <v-expansion-panel-content class="padding-g">
                                   <v-timeline align-top dense>
                                     <v-timeline-item
                                       color="indigo darken-4"
@@ -320,7 +320,7 @@
                                     </v-icon>
                                   </template>
                                 </v-expansion-panel-header>
-                                <v-expansion-panel-content>
+                                <v-expansion-panel-content class="padding-g">
                                   <v-timeline align-top dense>
                                     <v-timeline-item
                                       color="green darken-4"
@@ -829,7 +829,7 @@ export default {
 <style>
 .image {
   background: url("~static/bg.jpg");
-  background-position: 50%;
+  background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -843,5 +843,8 @@ export default {
 
 .my-float{
 	margin-top:16px;
+}
+.padding-g{
+  padding: 0 15px 15px 0 ;
 }
 </style>
