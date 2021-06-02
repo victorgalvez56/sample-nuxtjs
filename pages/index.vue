@@ -635,6 +635,7 @@
         <v-btn
           v-show="fab"
           v-scroll="onScroll"
+          small
           fab
           dark
           fixed
@@ -645,8 +646,22 @@
         >
           <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
-        <a href="https://api.whatsapp.com/send?phone=51933336359&text=Hola" class="float" target="_blank">
-        </a>
+        <v-btn
+          v-scroll="onScroll"
+          small
+          fab
+          dark
+          fixed
+          bottom
+          left
+          class="float"
+          color="#25d366"
+          @click="toTop"
+        >
+          <v-icon>mdi-whatsapp</v-icon>
+        </v-btn>
+        <!-- <a href="https://api.whatsapp.com/send?phone=51933336359&text=Hola" class="float" target="_blank">
+        </a> -->
       </v-container>
     </div>
   </v-app>
@@ -832,26 +847,11 @@ export default {
   background-repeat: no-repeat;
   height: 100%;
 }
-.float{
-  background: url("~static/whatsapp.png");
-  background-size: contain;
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	left:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
+
 .float:hover {
 	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+	color: black;
+  background-color:#25d366;
 }
 
 .my-float{
