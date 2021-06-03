@@ -3,12 +3,11 @@
     <div class="image">
       <v-container>
         <v-row>
-          <v-col cols="12" sm="4" style="height:100vh">
+          <v-col cols="12" sm="4"  height="100vh">
             <v-hover>
               <template v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
-
-                  <v-img height="100%" src="profile.jpg" />
+                <v-card :elevation="hover ? 12 : 3" class="mx-auto pa-6" height="100%" >
+                  <v-img src="profile.jpg" />
 
                   <v-card-title class="primary--text">
                     Víctor Gálvez
@@ -42,15 +41,23 @@
                       >{{ $t("country") }}: Perú
                     </div>
                   </v-card-subtitle>
+                  <v-row no-gutters>
+                    <v-col cols="12" sm="6">
+                      <v-img src="linkedin.png" contain max-height="30px" />
+                    </v-col>
+                    <v-col cols="12" sm="6">
+                      <v-img src="github.png" contain max-height="30px" />
+                    </v-col>
+                  </v-row>
                   <v-card-text />
                 </v-card>
               </template>
             </v-hover>
           </v-col>
-          <v-col cols="12" sm="8" style="height:100vh">
+          <v-col cols="12" sm="8"  height="100vh">
             <v-hover>
               <template v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 24 : 6" class="mx-auto pa-6">
+                <v-card :elevation="hover ? 12 : 3" class="mx-auto pa-6" height="100%" >
                   <v-tabs v-model="tab" show-arrows right>
                     <v-tab> {{ $t("about_me") }}</v-tab>
                     <v-tab> {{ $t("portfolio") }} </v-tab>
@@ -122,7 +129,7 @@
                             </div>
                             <v-divider class="pa-md-4 mx-lg-auto"></v-divider>
                             <v-expansion-panels>
-                              <v-expansion-panel >
+                              <v-expansion-panel>
                                 <v-expansion-panel-header class="primary--text">
                                   {{ $t("vocational_training") }}
                                   <template v-slot:actions>
@@ -172,7 +179,7 @@
                                   </v-timeline>
                                 </v-expansion-panel-content>
                               </v-expansion-panel>
-                              <v-expansion-panel >
+                              <v-expansion-panel>
                                 <v-expansion-panel-header class="primary--text">
                                   {{ $t("work_experience") }}
                                   <template v-slot:actions>
@@ -271,7 +278,8 @@
                                           <strong>Turbo Gaming Center</strong>
                                           <div class="caption">
                                             Elaboración Sistema Específico de
-                                            Ventas e Inventario empresa usando Codeigniter.
+                                            Ventas e Inventario empresa usando
+                                            Codeigniter.
                                           </div>
                                         </v-col>
                                       </v-row>
@@ -565,18 +573,18 @@
                                   <v-expansion-panel-content>
                                     <v-row>
                                       <v-col
-                                      v-for="technology in technologiesBackend"
-                                      :key="technology"
+                                        v-for="technology in technologiesBackend"
+                                        :key="technology"
                                         cols="12"
                                         sm="4"
                                       >
-                                            <v-container>
-                                        <v-img
-                                          :src="technology.svg"
-                                          height="100"
-                                          contain
-                                        />
-                                      </v-container>
+                                        <v-container>
+                                          <v-img
+                                            :src="technology.svg"
+                                            height="100"
+                                            contain
+                                          />
+                                        </v-container>
                                       </v-col>
                                     </v-row>
                                   </v-expansion-panel-content>
@@ -590,18 +598,18 @@
                                   <v-expansion-panel-content>
                                     <v-row>
                                       <v-col
-                                      v-for="technology in technologiesOthers"
-                                      :key="technology"
+                                        v-for="technology in technologiesOthers"
+                                        :key="technology"
                                         cols="12"
                                         sm="4"
                                       >
-                                   <v-container>
-                                        <v-img
-                                          :src="technology.svg"
-                                          height="100"
-                                          contain
-                                        />
-                                      </v-container>
+                                        <v-container>
+                                          <v-img
+                                            :src="technology.svg"
+                                            height="100"
+                                            contain
+                                          />
+                                        </v-container>
                                       </v-col>
                                     </v-row>
                                   </v-expansion-panel-content>
@@ -836,15 +844,15 @@ export default {
 }
 
 .float:hover {
-	text-decoration: none;
-	color: black;
-  background-color:#25d366;
+  text-decoration: none;
+  color: black;
+  background-color: #25d366;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }
-.padding-g{
-  padding: 0 15px 15px 0 ;
+.padding-g {
+  padding: 0 15px 15px 0;
 }
 </style>
