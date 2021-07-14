@@ -3,61 +3,73 @@
     <div class="image">
       <v-container>
         <v-row>
-          <v-col cols="12" sm="4"  height="100vh">
+          <v-col cols="12" sm="4" height="100vh">
             <v-hover>
               <template v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 12 : 3" class="mx-auto pa-6" height="100%" >
+                <v-card
+                  :elevation="hover ? 12 : 3"
+                  class="mx-auto pa-6"
+                  height="100%"
+                >
                   <v-img src="profile.jpg" />
 
                   <v-card-title class="primary--text">
                     Víctor Gálvez
                   </v-card-title>
 
-                  <v-card-subtitle>
+                  <v-card-subtitle class="pb-0">
                     {{ $t("developer") }}
-                    <div>
+                    <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
                       >{{ $t("age") }}: 24
                     </div>
-                    <div>
+                    <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
                       >{{ $t("work_experience") }}: 6 {{ $t("years") }}
                     </div>
-                    <div>
+                    <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
                       >{{ $t("phone") }}: +51933336359
                     </div>
-                    <div>
+                    <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
                       >{{ $t("email") }}: victor.galvez56@gmail.com
                     </div>
-                    <div>
+                    <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
                       >{{ $t("country") }}: Perú
                     </div>
+                    <div class="d-flex justify-center mt-2" flat tile>
+                      <v-btn
+                        class="mx-1"
+                        v-for="network in social_networks"
+                        :key="network"
+                        fab
+                        dark
+                        small
+                        :color="network.color"
+                      >
+                        <v-icon>{{ `mdi-${network.icon}` }}</v-icon>
+                      </v-btn>
+                    </div>
                   </v-card-subtitle>
-                  <v-row no-gutters>
-                    <v-col cols="12" sm="6">
-                      <v-img src="linkedin.png" contain max-height="30px" />
-                    </v-col>
-                    <v-col cols="12" sm="6">
-                      <v-img src="github.png" contain max-height="30px" />
-                    </v-col>
-                  </v-row>
-                  <v-card-text />
                 </v-card>
               </template>
             </v-hover>
           </v-col>
-          <v-col cols="12" sm="8"  height="100vh">
+          <v-col cols="12" sm="8" height="100vh">
             <v-hover>
               <template v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 12 : 3" class="mx-auto pa-6" height="100%" >
+                <v-card
+                  :elevation="hover ? 12 : 3"
+                  class="mx-auto pa-6"
+                  height="100%"
+                >
                   <v-tabs v-model="tab" show-arrows right>
                     <v-tab> {{ $t("about_me") }}</v-tab>
                     <v-tab> {{ $t("portfolio") }} </v-tab>
@@ -72,9 +84,7 @@
                           v-on="on"
                         >
                           {{ $t("options") }}
-                          <v-icon right>
-                            mdi-menu-down
-                          </v-icon>
+                          <v-icon right> mdi-menu-down </v-icon>
                         </v-btn>
                       </template>
                       <v-list>
@@ -133,9 +143,7 @@
                                 <v-expansion-panel-header class="primary--text">
                                   {{ $t("vocational_training") }}
                                   <template v-slot:actions>
-                                    <v-icon color="green">
-                                      $expand
-                                    </v-icon>
+                                    <v-icon color="green"> $expand </v-icon>
                                   </template>
                                 </v-expansion-panel-header>
                                 <v-expansion-panel-content class="padding-g">
@@ -183,9 +191,7 @@
                                 <v-expansion-panel-header class="primary--text">
                                   {{ $t("work_experience") }}
                                   <template v-slot:actions>
-                                    <v-icon color="green">
-                                      $expand
-                                    </v-icon>
+                                    <v-icon color="green"> $expand </v-icon>
                                   </template>
                                 </v-expansion-panel-header>
                                 <v-expansion-panel-content class="padding-g">
@@ -323,9 +329,7 @@
                                 <v-expansion-panel-header class="primary--text">
                                   Hackathones
                                   <template v-slot:actions>
-                                    <v-icon color="green">
-                                      $expand
-                                    </v-icon>
+                                    <v-icon color="green"> $expand </v-icon>
                                   </template>
                                 </v-expansion-panel-header>
                                 <v-expansion-panel-content class="padding-g">
@@ -515,8 +519,8 @@
                               mandatory
                             >
                               <v-item
-                                v-for="n in length"
-                                :key="`btn-${n}`"
+                                v-for="portfolio in portfolios"
+                                :key="`btn-${portfolio}`"
                                 v-slot="{ active, toggle }"
                               >
                                 <v-btn
@@ -536,7 +540,7 @@
                       </v-tab-item>
                       <v-tab-item>
                         <v-card flat>
-                          <v-container class=" lighten-5">
+                          <v-container class="lighten-5">
                             <v-row justify="center">
                               <v-expansion-panels popout>
                                 <v-expansion-panel>
@@ -674,126 +678,178 @@ export default {
     items: [
       {
         color: "red lighten-2",
-        icon: "mdi-star"
+        icon: "mdi-star",
       },
       {
         color: "purple darken-1",
-        icon: "mdi-book-variant"
+        icon: "mdi-book-variant",
       },
       {
         color: "green lighten-1",
-        icon: "mdi-airballoon"
+        icon: "mdi-airballoon",
       },
       {
         color: "indigo",
-        icon: "mdi-buffer"
-      }
+        icon: "mdi-buffer",
+      },
     ],
     portfolio: [
       {
         img: "",
         title: "",
-        text: ""
-      }
+        text: "",
+      },
     ],
     length: 4,
     onboarding: 0,
     portfolios: [
       {
+        img: "admin-system-factur.png",
+        title: "Sistema para crear Tenant",
+        text: "",
+      },
+      {
+        img: "bizag-tenant.png",
+        title: "Tenant de Facturación BIZAG",
+        text: "",
+      },
+      {
+        img: "marpro1-tenant.png",
+        title: "Tenant de Facturación MAR",
+        text: "",
+      },
+      {
+        img: "cover-prime.png",
+        title: "Cover Prime",
+        text: "",
+      },
+      {
+        img: "sistema-personal-acist.png",
+        title: "Bizag Personal",
+        text: "",
+      },
+      {
         img: "quipubeer-landing.png",
         title: "QuipuBeer",
-        text: ""
+        text: "",
+      },
+      {
+        img: "supervisionobra.png",
+        title: "Supervisión de Obras",
+        text: "",
       },
       {
         img: "anunciadev-landing.png",
         title: "AnunciaDev",
-        text: ""
+        text: "",
       },
       {
         img: "sistemainventario-landing.png",
         title: "Sistema Inventario",
-        text: ""
+        text: "",
+      },
+      {
+        img: "control-personal.png",
+        title: "Sistema Control Persona para Ejército del Perú",
+        text: "",
       },
       {
         img: "presupuestos-landing.png",
         title: "Sistema Valoraciones Colegio Prescott",
-        text: ""
-      }
+        text: "",
+      },
+      {
+        img: "delivery.png",
+        title: "Sistema de Delivery",
+        text: "",
+      },
     ],
     panelsSkills: [
       {
-        text: "FrontEnd"
+        text: "FrontEnd",
       },
       {
-        text: "BackEnd"
+        text: "BackEnd",
       },
       {
-        text: "Others"
-      }
+        text: "Others",
+      },
     ],
     technologiesFront: [
       {
-        svg: "html5.svg"
+        svg: "html5.svg",
       },
       {
-        svg: "css3.svg"
+        svg: "css3.svg",
       },
       {
-        svg: "javascript.svg"
+        svg: "javascript.svg",
       },
       {
-        svg: "jquery-2.svg"
+        svg: "jquery-2.svg",
       },
       {
-        svg: "typescript.svg"
+        svg: "typescript.svg",
       },
       {
-        svg: "vue.svg"
+        svg: "vue.svg",
       },
       {
-        svg: "vuetify.svg"
+        svg: "vuetify.svg",
       },
       {
-        svg: "quasar.png"
+        svg: "quasar.png",
       },
       {
-        svg: "nuxt-logo.png"
-      }
+        svg: "nuxt-logo.png",
+      },
     ],
     technologiesBackend: [
       {
-        svg: "laravel.svg"
+        svg: "laravel.svg",
       },
       {
-        svg: "codeigniter.svg"
+        svg: "codeigniter.svg",
       },
       {
-        svg: "php.svg"
+        svg: "php.svg",
       },
       {
-        svg: "java.png"
+        svg: "java.png",
       },
       {
-        svg: "firebase.svg"
-      }
+        svg: "firebase.svg",
+      },
     ],
     technologiesOthers: [
       {
-        svg: "euroidiomas.png"
+        svg: "euroidiomas.png",
       },
       {
-        svg: "docker.svg"
+        svg: "docker.svg",
       },
       {
-        svg: "figma.png"
+        svg: "figma.png",
       },
       {
-        svg: "google-cloud-2.svg"
+        svg: "google-cloud-2.svg",
       },
       {
-        svg: "git.svg"
-      }
-    ]
+        svg: "git.svg",
+      },
+    ],
+    social_networks: [
+      {
+        icon: "github",
+        url: "",
+        color: "",
+      },
+      {
+        icon: "linkedin",
+        url: "",
+        color: "primary",
+      },
+    ],
   }),
   created() {
     this.language = this.$i18n.locale;
@@ -829,8 +885,8 @@ export default {
       } else {
         this.$vuetify.theme.dark = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
