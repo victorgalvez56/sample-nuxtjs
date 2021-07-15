@@ -1,0 +1,423 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210714.000309.14656.0.001.json",
+    "dumpEventTime": "2021-07-14T00:03:09Z",
+    "dumpEventTimeStamp": "1626238989269",
+    "processId": 14656,
+    "cwd": "C:\\Users\\Velocity\\Documents\\Projects\\sample-nuxtjs",
+    "commandLine": [
+      "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+      "C:\\Users\\Velocity\\Documents\\Projects\\sample-nuxtjs\\node_modules\\.bin\\\\..\\nuxt\\bin\\nuxt.js"
+    ],
+    "nodejsVersion": "v12.5.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.5.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.5.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19042",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 13591750,
+        "nice": 0,
+        "sys": 13115906,
+        "idle": 117377828,
+        "irq": 1799515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 13591750,
+        "nice": 0,
+        "sys": 13115906,
+        "idle": 117377828,
+        "irq": 1799515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 13591750,
+        "nice": 0,
+        "sys": 13115906,
+        "idle": 117377828,
+        "irq": 1799515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 13591750,
+        "nice": 0,
+        "sys": 13115906,
+        "idle": 117377828,
+        "irq": 1799515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 13591750,
+        "nice": 0,
+        "sys": 13115906,
+        "idle": 117377828,
+        "irq": 1799515
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 13591750,
+        "nice": 0,
+        "sys": 13115906,
+        "idle": 117377828,
+        "irq": 1799515
+      }
+    ],
+    "host": "DESKTOP-OC50RDO"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff78c536e09",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10889"
+    },
+    {
+      "pc": "0x00007ff78c53a704",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+25476"
+    },
+    {
+      "pc": "0x00007ff78c539728",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+21416"
+    },
+    {
+      "pc": "0x00007ff78c622f5b",
+      "symbol": "v8::base::CPU::has_sse+38011"
+    },
+    {
+      "pc": "0x00007ff78ce07e2e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff78cdf017a",
+      "symbol": "v8::SharedArrayBuffer::Externalize+842"
+    },
+    {
+      "pc": "0x00007ff78cc8197c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff78cc8989f",
+      "symbol": "v8::internal::Heap::OldGenerationSizeOfObjects+4879"
+    },
+    {
+      "pc": "0x00007ff78cc7fb43",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00007ff78cc7e3d4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2292"
+    },
+    {
+      "pc": "0x00007ff78cc9ceb5",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff78ca5321d",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3757"
+    },
+    {
+      "pc": "0x00007ff78ceb0b1d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+614605"
+    },
+    {
+      "pc": "0x00000163b23e152b",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2163765248,
+    "totalCommittedMemory": 2163765248,
+    "usedMemory": 2144358488,
+    "availableMemory": 36585736,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047328,
+        "used": 424,
+        "available": 1046904
+      },
+      "old_space": {
+        "memorySize": 1944203264,
+        "committedMemory": 1944203264,
+        "capacity": 1931440272,
+        "used": 1931440272,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 4096000,
+        "committedMemory": 4096000,
+        "capacity": 3433824,
+        "used": 3222240,
+        "available": 211584
+      },
+      "map_space": {
+        "memorySize": 10752000,
+        "committedMemory": 10752000,
+        "capacity": 7942960,
+        "used": 7942960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 201150464,
+        "committedMemory": 201150464,
+        "capacity": 200620312,
+        "used": 200620312,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 1204224,
+        "committedMemory": 1204224,
+        "capacity": 1100320,
+        "used": 1100320,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 195.14,
+    "kernelCpuSeconds": 11.015,
+    "cpuConsumptionPercent": 2.97267,
+    "maxRss": 2175225856,
+    "pageFaults": {
+      "IORequired": 3055149,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 8142,
+      "writes": 104
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\Velocity\\Documents\\Projects\\sample-nuxtjs",
+    "aliases": "C:\\laragon\\bin\\cmder\\config\\user-aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Velocity\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "architecture": "64",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132418996428244030",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_12412_CGWXZGJVBLDHPUMT",
+    "CMDER_ROOT": "C:\\laragon\\bin\\cmder",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-OC50RDO",
+    "COMSPEC": "C:\\WINDOWS\\system32\\cmd.exe",
+    "CUDA_PATH": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1",
+    "CUDA_PATH_V10_1": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1",
+    "DOCUMENT_ROOT": "C:\\laragon\\www",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "FULL_TITLE": "\"C:\\Users\\Velocity\\Documents\\Projects\\sample-nuxtjs\"",
+    "GIT_ASKPASS": "c:\\Users\\Velocity\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "GIT_INSTALL_ROOT": "C:\\laragon\\bin\\cmder\\..\\git",
+    "HOME": "C:\\Users\\Velocity",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Velocity",
+    "INIT_CWD": "C:\\Users\\Velocity\\Documents\\Projects\\sample-nuxtjs",
+    "LANG": "es_ES.UTF-8",
+    "LARAGON_ROOT": "C:\\laragon\\",
+    "LOCALAPPDATA": "C:\\Users\\Velocity\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-OC50RDO",
+    "MSYSTEM": "MINGW64",
+    "NODE": "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+    "NODE_ENV": "development",
+    "NPM QUASAR": "C:\\Users\\Velocity\\AppData\\Roaming\\npm",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.5.0 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "dev",
+    "npm_lifecycle_script": "nuxt",
+    "npm_node_execpath": "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+    "npm_package_dependencies_nuxt": "^2.13.0",
+    "npm_package_dependencies_nuxt_i18n": "^6.27.0",
+    "npm_package_dependencies_serve": "^11.3.2",
+    "npm_package_description": "These steps will get this sample Nuxt.js application running for you using DigitalOcean App Platform.",
+    "npm_package_devDependencies__fortawesome_fontawesome_free": "^5.15.3",
+    "npm_package_devDependencies__nuxtjs_vuetify": "^1.11.3",
+    "npm_package_name": "portfolio-victor-galvez",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "rm -r _static 2>/dev/null; nuxt build && nuxt export && mv dist _static && (rm _static/README.md || true)",
+    "npm_package_scripts_dev": "nuxt",
+    "npm_package_scripts_export": "nuxt export",
+    "npm_package_scripts_serve": "nuxt serve",
+    "npm_package_scripts_start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "6",
+    "NVCUDASAMPLES10_1_ROOT": "C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v10.1",
+    "NVCUDASAMPLES_ROOT": "C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v10.1",
+    "NVTOOLSEXT_PATH": "C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\",
+    "OneDrive": "C:\\Users\\Velocity\\OneDrive",
+    "OPENSSL_CONF": "C:\\laragon\\bin\\apache\\httpd-2.4.35-win64-VC15\\conf\\openssl.cnf",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\Velocity\\AppData\\Local\\Temp\\yarn--1626232054255-0.38368540530258954;C:\\Users\\Velocity\\Documents\\Projects\\sample-nuxtjs\\node_modules\\.bin;C:\\Users\\Velocity\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\laragon\\bin\\nodejs\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\laragon\\bin\\nodejs\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\laragon\\bin\\nodejs\\node-v12\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Velocity\\bin;C:\\Users\\Velocity\\AppData\\Local\\Yarn\\config\\global\\node_modules\\.bin;C:\\Users\\Velocity\\AppData\\Roaming\\npm;C:\\Users\\Velocity\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\laragon\\bin\\laragon\\utils;C:\\laragon\\bin\\mysql\\mysql-5.7.24-winx64\\bin;C:\\laragon\\bin\\php\\php-7.2.19-Win32-VC15-x64;C:\\laragon\\bin\\composer;C:\\laragon\\bin\\apache\\httpd-2.4.35-win64-VC15\\bin;C:\\laragon\\bin\\redis\\redis-x64-3.2.100;C:\\laragon\\bin\\nodejs\\node-v12;C:\\laragon\\bin\\nginx\\nginx-1.16.0;C:\\laragon\\bin\\notepad++;C:\\laragon\\bin\\telnet;C:\\laragon\\bin\\ngrok;C:\\laragon\\bin\\git\\bin;C:\\laragon\\bin\\git\\cmd;C:\\laragon\\bin\\git\\usr\\bin;C:\\laragon\\bin\\git\\mingw64\\bin;C:\\laragon\\bin;C:\\laragon\\usr\\bin;C:\\laragon\\bin\\putty;C:\\laragon\\bin\\cmder\\bin;C:\\Python39\\Scripts;C:\\Python39;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\libnvvp;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;C:\\ProgramData\\Anaconda3\\Library\\usr\\bin;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Scripts;C:\\Python38\\Scripts;C:\\Python38;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\Symfony;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2019.1;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\nodejs;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;C:\\Users\\Velocity\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Velocity\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Velocity\\AppData\\Local\\Yarn\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.2\\bin;C:\\Users\\Velocity\\AppData\\Roaming\\npm;C:\\Users\\Velocity\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\share\\vim\\vim74;C:\\laragon\\bin\\cmder",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+    "PhpStorm": "C:\\Program Files\\JetBrains\\PhpStorm 2020.2\\bin;",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e0d",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PT7HOME": "C:\\Program Files\\Cisco Packet Tracer 7.3.0",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/c/Users/Velocity/Documents/Projects/sample-nuxtjs",
+    "QT_DEVICE_PIXEL_RATIO": "auto",
+    "SESSIONNAME": "Console",
+    "SHLVL": "2",
+    "SVN_SSH": "C:\\\\Program Files\\\\Git\\\\bin\\\\ssh.exe",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Velocity\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.58.1",
+    "TER_TITLE": "sample-nuxtjs",
+    "TMP": "C:\\Users\\Velocity\\AppData\\Local\\Temp",
+    "user-aliases": "C:\\laragon\\bin\\cmder\\config\\user-aliases.cmd",
+    "USERDOMAIN": "DESKTOP-OC50RDO",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-OC50RDO",
+    "USERNAME": "Velocity",
+    "USERPROFILE": "C:\\Users\\Velocity",
+    "USER_DIR": "C:\\laragon\\usr",
+    "USR_DIR": "C:\\laragon\\usr",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "verbose-output": "0 ",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Velocity\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Velocity\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-7a18f3630a-sock",
+    "VUE_ENV": "server",
+    "WINDIR": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false",
+    "_": "/usr/bin/winpty",
+    "_applied": "true"
+  },
+  "sharedObjects": [
+    "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\Avast Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}

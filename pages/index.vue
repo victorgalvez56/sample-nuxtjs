@@ -19,11 +19,11 @@
 
                   <v-card-subtitle class="pb-0">
                     {{ $t("developer") }}
-                    <div class="mt-1">
+                    <!-- <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
                       >{{ $t("age") }}: 24
-                    </div>
+                    </div> -->
                     <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
@@ -53,6 +53,9 @@
                         dark
                         small
                         :color="network.color"
+                        :href="network.url"
+                        target="_blank"
+                        download=""
                       >
                         <v-icon>{{ `mdi-${network.icon}` }}</v-icon>
                       </v-btn>
@@ -501,9 +504,8 @@
                                   <h2 class="title primary--text">
                                     {{ portfolio.title }}
                                   </h2>
-                                  Travel to the best outdoor experience on
-                                  planet Earth. A vacation you will never
-                                  forget!
+
+                                  {{ portfolio.text }}
                                 </v-card-text>
                               </v-card>
                             </v-window-item>
@@ -706,63 +708,64 @@ export default {
       {
         img: "admin-system-factur.png",
         title: "Sistema para crear Tenant",
-        text: "",
-      },
-      {
-        img: "bizag-tenant.png",
-        title: "Tenant de Facturación BIZAG",
-        text: "",
+        text: "Sistema con arquitectura de software Multitenant, está arquitectura permite a una sola instancia de software servir a muchos clientes. En otras palabras este software es una panel para crear clientes con su propia base de datos, lógica y requerimientos. Separando la información sensible de cada uno y que solo sea visible por ellos.",
       },
       {
         img: "marpro1-tenant.png",
         title: "Tenant de Facturación MAR",
-        text: "",
+        text: "Sistema para facturación electrónica usando VueJS en frontend y Laravel en Backend.",
       },
+      {
+        img: "bizag-tenant.png",
+        title: "Tenant de Facturación BIZAG",
+        text: "Sistema para facturación electrónica usando VueJS en frontend y Laravel en Backend.",
+      },
+
       {
         img: "cover-prime.png",
         title: "Cover Prime",
-        text: "",
+        text: "Landing Page para empresa de covertizos con el fin de promocionar sus productos para alcanzar a sus clientes.",
       },
       {
         img: "sistema-personal-acist.png",
         title: "Bizag Personal",
-        text: "",
+        text: "Sistema para control de personal usando NuxtJS en frontend y Laravel en Backend",
       },
       {
         img: "quipubeer-landing.png",
         title: "QuipuBeer",
-        text: "",
+        text: "Landing Page para empresa de cervezas artesanales con el fin de promocionar sus productos para alcanzar a sus clientes.",
       },
       {
         img: "supervisionobra.png",
         title: "Supervisión de Obras",
-        text: "",
+        text: "Sistema para la supervisión de obras en Minera Luren S.A.C. Se realizó con VueJS en frontend y Laravel en Backend para diferentes módulos cómo programación de fechas, estados de obras,etc.",
       },
       {
         img: "anunciadev-landing.png",
         title: "AnunciaDev",
-        text: "",
+        text: "Sistema para anuncios de empresas a nivel latinoamerica en Itesur S.A.C. Se realizó con Laravel + JQuery.",
       },
       {
         img: "sistemainventario-landing.png",
         title: "Sistema Inventario",
-        text: "",
+        text: "Sistema para control de almacén en empresa TurboGamingCenter se realizó con PHP Codeigniter los diferentes módulos de reportes y charts.",
       },
       {
         img: "control-personal.png",
         title: "Sistema Control Persona para Ejército del Perú",
-        text: "",
+        text: "Sistema para control de personal en Ejército del Perú se realizó con PHP Codeigniter los diferentes requerimientos cómo código de barras, control de salubridad, etc.",
       },
       {
         img: "presupuestos-landing.png",
         title: "Sistema Valoraciones Colegio Prescott",
-        text: "",
+        text: "Sistema para valoración de personal en Colegio Anglo Americano Prescott se realizó con PHP Codeigniter los diferentes requerimientos cómo promedio y ranking de personal.",
       },
-      {
-        img: "delivery.png",
-        title: "Sistema de Delivery",
-        text: "",
-      },
+      // {
+      //   img: "delivery.png",
+      //   title: "Sistema de Delivery",
+      //   text: "",
+      // },
     ],
     panelsSkills: [
       {
@@ -809,6 +812,9 @@ export default {
         svg: "laravel.svg",
       },
       {
+        svg: "cakephp.jpg",
+      },
+      {
         svg: "codeigniter.svg",
       },
       {
@@ -841,13 +847,21 @@ export default {
     social_networks: [
       {
         icon: "github",
-        url: "",
+        url: "https://github.com/victorgalvez56",
         color: "",
+        label: "",
       },
       {
         icon: "linkedin",
-        url: "",
+        url: "https://www.linkedin.com/in/v%C3%ADctor-galvez-260910177/",
         color: "primary",
+        label: "",
+      },
+      {
+        icon: "download",
+        url: "/CV-+Victor+Galvez.docx",
+        color: "primary",
+        label: "Descargar CV",
       },
     ],
   }),
