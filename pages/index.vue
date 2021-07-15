@@ -859,7 +859,7 @@ export default {
       },
       {
         icon: "download",
-        url: "/CV-+Victor+Galvez.docx",
+        url: "/CV-+Victor+Galvez.pdf",
         color: "primary",
         label: "Descargar CV",
       },
