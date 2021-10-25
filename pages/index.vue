@@ -751,11 +751,6 @@ export default {
         text: "Sistema con arquitectura de software Multitenant, está arquitectura permite a una sola instancia de software servir a muchos clientes. En otras palabras este software es una panel para crear clientes con su propia base de datos, lógica y requerimientos. Separando la información sensible de cada uno y que solo sea visible por ellos.",
       },
       {
-        img: "marpro1-tenant.png",
-        title: "Tenant de Facturación MAR",
-        text: "Sistema para facturación electrónica usando VueJS en frontend y Laravel en Backend.",
-      },
-      {
         img: "bizag-tenant.png",
         title: "Tenant de Facturación BIZAG",
         text: "Sistema para facturación electrónica usando VueJS en frontend y Laravel en Backend.",
