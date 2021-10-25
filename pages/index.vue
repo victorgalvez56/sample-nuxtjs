@@ -19,11 +19,6 @@
 
                   <v-card-subtitle class="pb-0">
                     {{ $t("developer") }}
-                    <!-- <div class="mt-1">
-                      <v-icon color="primary">
-                        mdi-checkbox-marked-circle </v-icon
-                      >{{ $t("age") }}: 24
-                    </div> -->
                     <div class="mt-1">
                       <v-icon color="primary">
                         mdi-checkbox-marked-circle </v-icon
@@ -199,6 +194,41 @@
                                 </v-expansion-panel-header>
                                 <v-expansion-panel-content class="padding-g">
                                   <v-timeline align-top dense>
+                                    <v-timeline-item
+                                      color="indigo darken-4"
+                                      small
+                                      icon="mdi-star"
+                                    >
+                                      <v-row class="pt-1">
+                                        <v-col>
+                                          <strong>Lixsys (Chile)</strong>
+                                          <div class="caption">
+                                            Desarrollo de aplicaciones para
+                                            miles de usuarios en PHP, ReactJS,
+                                            Capacitor.
+                                          </div>
+                                        </v-col>
+                                      </v-row>
+                                    </v-timeline-item>
+                                    <v-timeline-item
+                                      color="indigo darken-4"
+                                      small
+                                      icon="mdi-star"
+                                    >
+                                      <v-row class="pt-1">
+                                        <v-col>
+                                          <strong>HanuFit (Chile)</strong>
+                                          <div class="caption">
+                                            Desarrollo de aplicación para miles
+                                            de usuarios en ReactJS + NodeJS +
+                                            Capacitor.
+                                            <a href="https://www.hanufit.com/"
+                                              >Aquí</a
+                                            >
+                                          </div>
+                                        </v-col>
+                                      </v-row>
+                                    </v-timeline-item>
                                     <v-timeline-item
                                       color="indigo darken-4"
                                       small
@@ -706,6 +736,16 @@ export default {
     onboarding: 0,
     portfolios: [
       {
+        img: "desafio-glp.PNG",
+        title: "Desafío GLP",
+        text: "Plataforma Educativa streamming para el aprendizaje de doctores sobre la diabetes para doctores de diferentes países de LATAM",
+      },
+      {
+        img: "hanu-fit.PNG",
+        title: "HanuFit",
+        text: "Sistema web PWA, Se utilizó ReactJS + NodeJS + Capacitor para la versión Mobile. Para entrenamiento, nutrición y relajación para miles de usuarios",
+      },
+      {
         img: "admin-system-factur.png",
         title: "Sistema para crear Tenant",
         text: "Sistema con arquitectura de software Multitenant, está arquitectura permite a una sola instancia de software servir a muchos clientes. En otras palabras este software es una panel para crear clientes con su propia base de datos, lógica y requerimientos. Separando la información sensible de cada uno y que solo sea visible por ellos.",
@@ -780,6 +820,21 @@ export default {
     ],
     technologiesFront: [
       {
+        svg: "react.png",
+      },
+      {
+        svg: "vue.svg",
+      },
+      {
+        svg: "vuetify.svg",
+      },
+      {
+        svg: "quasar.png",
+      },
+      {
+        svg: "nuxt-logo.png",
+      },
+      {
         svg: "html5.svg",
       },
       {
@@ -793,18 +848,6 @@ export default {
       },
       {
         svg: "typescript.svg",
-      },
-      {
-        svg: "vue.svg",
-      },
-      {
-        svg: "vuetify.svg",
-      },
-      {
-        svg: "quasar.png",
-      },
-      {
-        svg: "nuxt-logo.png",
       },
     ],
     technologiesBackend: [
@@ -824,15 +867,12 @@ export default {
         svg: "java.png",
       },
       {
-        svg: "firebase.svg",
+        svg: "node-js.png",
       },
     ],
     technologiesOthers: [
       {
         svg: "euroidiomas.png",
-      },
-      {
-        svg: "docker.svg",
       },
       {
         svg: "figma.png",
@@ -858,7 +898,7 @@ export default {
         label: "",
       },
       {
-        icon: "download",
+        icon: "file-pdf-box",
         url: "/CV-+Victor+Galvez.pdf",
         color: "primary",
         label: "Descargar CV",
