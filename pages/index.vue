@@ -14,7 +14,7 @@
                   <v-img src="profile.jpg" />
 
                   <v-card-title class="primary--text">
-                    Víctor Gálvez
+                    Víctor Gálvez TEST
                   </v-card-title>
 
                   <v-card-subtitle class="pb-0">
