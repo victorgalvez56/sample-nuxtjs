@@ -68,62 +68,65 @@
                   class="mx-auto pa-6"
                   height="100%"
                 >
-                  <v-tabs v-model="tab" show-arrows right>
-                    <v-tab> {{ $t("about_me") }}</v-tab>
-                    <v-tab> {{ $t("portfolio") }} </v-tab>
-                    <v-tab> {{ $t("skills") }} </v-tab>
-                    <v-menu v-if="more.length" bottom left>
-                      <template v-slot:activator="{ on, attrs }">
-                        <v-btn
-                          text
-                          class="align-self-center mr-4"
-                          v-bind="attrs"
-                          color="grey darken-1"
-                          v-on="on"
-                        >
-                          {{ $t("options") }}
-                          <v-icon right> mdi-menu-down </v-icon>
-                        </v-btn>
-                      </template>
-                      <v-list>
-                        <v-list-item-group>
-                          <v-list-item
-                            v-if="$vuetify.theme.dark"
-                            @click="onToggleTheme()"
+                  <v-toolbar dense elevation="2" flat outlined rounded>
+                    <v-tabs v-model="tab" show-arrows right>
+                      <v-tab> {{ $t("about_me") }}</v-tab>
+                      <v-tab> {{ $t("portfolio") }} </v-tab>
+                      <v-tab> {{ $t("skills") }} </v-tab>
+                      <v-menu v-if="more.length" bottom left>
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-btn
+                            text
+                            class="align-self-center mr-4"
+                            v-bind="attrs"
+                            color="grey darken-1"
+                            v-on="on"
                           >
-                            <v-list-item-content>
-                              <v-icon>mdi-lightbulb-on-outline</v-icon>
-                            </v-list-item-content>
-                          </v-list-item>
-                          <v-list-item
-                            v-if="!$vuetify.theme.dark"
-                            @click="onToggleTheme()"
-                          >
-                            <v-list-item-content>
-                              <v-icon>mdi-lightbulb-off-outline</v-icon>
-                            </v-list-item-content>
-                          </v-list-item>
+                            {{ $t("options") }}
+                            <v-icon right> mdi-menu-down </v-icon>
+                          </v-btn>
+                        </template>
+                        <v-list>
+                          <v-list-item-group>
+                            <v-list-item
+                              v-if="$vuetify.theme.dark"
+                              @click="onToggleTheme()"
+                            >
+                              <v-list-item-content>
+                                <v-icon>mdi-lightbulb-on-outline</v-icon>
+                              </v-list-item-content>
+                            </v-list-item>
+                            <v-list-item
+                              v-if="!$vuetify.theme.dark"
+                              @click="onToggleTheme()"
+                            >
+                              <v-list-item-content>
+                                <v-icon>mdi-lightbulb-off-outline</v-icon>
+                              </v-list-item-content>
+                            </v-list-item>
 
-                          <v-list-item
-                            v-if="language == 'en'"
-                            @click="onToggleLocale('es')"
-                          >
-                            <v-list-item-content>
-                              <v-img src="es.svg" contain max-height="20px" />
-                            </v-list-item-content>
-                          </v-list-item>
-                          <v-list-item
-                            v-if="language == 'es'"
-                            @click="onToggleLocale('en')"
-                          >
-                            <v-list-item-content>
-                              <v-img src="en.svg" contain max-height="20px" />
-                            </v-list-item-content>
-                          </v-list-item>
-                        </v-list-item-group>
-                      </v-list>
-                    </v-menu>
-                  </v-tabs>
+                            <v-list-item
+                              v-if="language == 'en'"
+                              @click="onToggleLocale('es')"
+                            >
+                              <v-list-item-content>
+                                <v-img src="es.svg" contain max-height="20px" />
+                              </v-list-item-content>
+                            </v-list-item>
+                            <v-list-item
+                              v-if="language == 'es'"
+                              @click="onToggleLocale('en')"
+                            >
+                              <v-list-item-content>
+                                <v-img src="en.svg" contain max-height="20px" />
+                              </v-list-item-content>
+                            </v-list-item>
+                          </v-list-item-group>
+                        </v-list>
+                      </v-menu>
+                    </v-tabs>
+                  </v-toolbar>
+
                   <v-tabs-items v-model="tab">
                     <v-container class="spacing-playground" fluid>
                       <v-tab-item>
@@ -376,8 +379,7 @@
                                         <v-col>
                                           <strong
                                             >Hackathon Comercio Perú 2021
-                                            </strong
-                                          >
+                                          </strong>
                                           <div class="caption">
                                             Primer puesto nivel nacional.
                                             Proyecto “Nansuyai”.
