@@ -751,7 +751,7 @@ export default {
         text: "App móvil para brindar seguridad y asistencia psicológicas a mujeres que han sufrido algún tipo de violencia. El app se conecta a una pulsera inteligente que brinda información de la ubicación en tiempo real y brinda alertas.",
       },
       {
-        img: "drive.PNG",
+        img: "insulina.PNG",
         title: "Novo Cine 2",
         text: "Sistema web responsive para pedir comida en estacionamientos, realizar preguntas y encuestas sobre lo que se proyecta.",
       },
