@@ -14,7 +14,7 @@
                   <v-img src="profile.jpg" />
 
                   <v-card-title class="primary--text">
-                    Víctor Gálvez
+                    Víctor Gálvez Cha.
                   </v-card-title>
 
                   <v-card-subtitle class="pb-0">
@@ -205,7 +205,7 @@
                                           <div class="caption">
                                             Desarrollo de aplicaciones para
                                             miles de usuarios en PHP, ReactJS,
-                                            Capacitor.
+                                            Capacitor, Ionic.
                                           </div>
                                         </v-col>
                                       </v-row>
@@ -367,6 +367,29 @@
                                 </v-expansion-panel-header>
                                 <v-expansion-panel-content class="padding-g">
                                   <v-timeline align-top dense>
+                                    <v-timeline-item
+                                      color="green darken-4"
+                                      small
+                                      icon="mdi-star"
+                                    >
+                                      <v-row class="pt-1">
+                                        <v-col>
+                                          <strong
+                                            >Hackathon Comercio Perú 2021
+                                            </strong
+                                          >
+                                          <div class="caption">
+                                            Primer puesto nivel nacional.
+                                            Proyecto “Nansuyai”.
+                                            <a
+                                              target="_blank"
+                                              href="https://elcomercio.pe/tecnologia/tecnologia-jovenes-peruanos-disenan-una-app-para-combatir-la-violencia-de-genero-noticia/"
+                                              >Ver Noticia</a
+                                            >
+                                          </div>
+                                        </v-col>
+                                      </v-row>
+                                    </v-timeline-item>
                                     <v-timeline-item
                                       color="green darken-4"
                                       small
@@ -736,6 +759,21 @@ export default {
     onboarding: 0,
     portfolios: [
       {
+        img: "nansuyai.PNG",
+        title: "Nansuyai",
+        text: "App móvil para brindar seguridad y asistencia psicológicas a mujeres que han sufrido algún tipo de violencia. El app se conecta a una pulsera inteligente que brinda información de la ubicación en tiempo real y brinda alertas.",
+      },
+      {
+        img: "drive.PNG",
+        title: "Novo Cine 2",
+        text: "Sistema web responsive para pedir comida en estacionamientos, realizar preguntas y encuestas sobre lo que se proyecta.",
+      },
+      {
+        img: "cajalosandes.PNG",
+        title: "Corrida Caja los Andes",
+        text: "App móvil en androis y ios para registrar el tracking de las corridas rastreando tu distancia, ritmo y tiempo. Mantiene tu mejor carrera actualizada y te muestra en tiempo real el recorrido. ",
+      },
+      {
         img: "desafio-glp.PNG",
         title: "Desafío GLP",
         text: "Plataforma Educativa streamming para el aprendizaje de doctores sobre la diabetes para doctores de diferentes países de LATAM",
@@ -744,6 +782,11 @@ export default {
         img: "hanu-fit.PNG",
         title: "HanuFit",
         text: "Sistema web PWA, Se utilizó ReactJS + NodeJS + Capacitor para la versión Mobile. Para entrenamiento, nutrición y relajación para miles de usuarios",
+      },
+      {
+        img: "nuevoamanecer.PNG",
+        title: "Un nuevo amanecer",
+        text: "Sistema informativo de eventos en diferentes ciudades de Chile. ",
       },
       {
         img: "admin-system-factur.png",
@@ -796,11 +839,6 @@ export default {
         title: "Sistema Valoraciones Colegio Prescott",
         text: "Sistema para valoración de personal en Colegio Anglo Americano Prescott se realizó con PHP Codeigniter los diferentes requerimientos cómo promedio y ranking de personal.",
       },
-      // {
-      //   img: "delivery.png",
-      //   title: "Sistema de Delivery",
-      //   text: "",
-      // },
     ],
     panelsSkills: [
       {
@@ -822,6 +860,9 @@ export default {
       },
       {
         svg: "vuetify.svg",
+      },
+      {
+        svg: "boostrap.png",
       },
       {
         svg: "quasar.png",
