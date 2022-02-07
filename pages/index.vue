@@ -9,7 +9,7 @@
                 <v-card
                   :elevation="hover ? 12 : 3"
                   class="mx-auto pa-6"
-                  height="100%"
+                  height="100vh"
                 >
                   <v-img src="profile.jpg" height="60%" />
 
