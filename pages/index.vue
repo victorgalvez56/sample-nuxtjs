@@ -922,7 +922,7 @@ export default {
       },
       {
         icon: "file-pdf-box",
-        url: "/CV-+Victor+Galvez.pdf",
+        url: "/Victor_Gálvez.pdf",
         color: "primary",
         label: "Descargar CV",
       },
